@@ -1071,6 +1071,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3985417863775376490, guid: 014f1df7493813149b6c43cef86d8894, type: 3}
   m_PrefabInstance: {fileID: 854639318}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1227478728 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 712132943276842597, guid: 0290386ed61c78a43aa22f7361f7a484, type: 3}
+  m_PrefabInstance: {fileID: 1658449745}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1237022616 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3985417863775376490, guid: 014f1df7493813149b6c43cef86d8894, type: 3}
@@ -1412,6 +1417,10 @@ PrefabInstance:
       value: Ender
       objectReference: {fileID: 0}
     - target: {fileID: 469839871192568493, guid: a02b795160dac3842a29c67fcc2f83b6, type: 3}
+      propertyPath: replayText
+      value: 
+      objectReference: {fileID: 1227478728}
+    - target: {fileID: 469839871192568493, guid: a02b795160dac3842a29c67fcc2f83b6, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 379553187}
@@ -1429,6 +1438,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 712132943276842597, guid: 0290386ed61c78a43aa22f7361f7a484, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2861782238954113663, guid: 0290386ed61c78a43aa22f7361f7a484, type: 3}
       propertyPath: levelName
       value: EndGame

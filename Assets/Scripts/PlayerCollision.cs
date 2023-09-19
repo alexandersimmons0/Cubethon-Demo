@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCollision : MonoBehaviour
-{
-    public PlayerController movement;
+namespace Commands{
+    public class PlayerCollision : MonoBehaviour
+    {
+        private InputHandler movement;
 
-    void OnCollisionEnter(Collision collision){
-        if(collision.collider.tag == "obsticle"){
-            movement.enabled = false;
-            FindObjectOfType<GameManager>().EndGame();
+        void OnCollisionEnter(Collision collision){
+            movement = GetComponent<InputHandler>();
+            if(collision.collider.tag == "obsticle"){
+                movement.enabled = false;
+                FindObjectOfType<GameManager>().EndGame();
+            }
         }
-    }
+    }       
 }
